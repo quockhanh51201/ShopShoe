@@ -21,19 +21,12 @@ const Index = () => {
     const TabBar = () => {
         return (
             <Tab.Navigator screenOptions={{ headerShown: false , tabBarShowLabel: false}}>
-            <Tab.Screen name="Home" component={Home} options={{
-               tabBarIcon: ({focused}) => {
-                    {
-                    console.log(focused)
-                    }
-                    return (
-                        <Image source={IMAGES.iconHome} styles = {{
+           <Tab.Screen name="Home" component={Home} options={{
+               tabBarIcon: ({focused}) => (
+                   <Image source={IMAGES.iconHome} style = {{
                        tintColor: focused ? '#000000' : '#D6D6D6'
-                       
-                        }}/>
-                        
-                    )
-                }
+                   }}></Image>
+               )
             }}/>
            <Tab.Screen name="Like" component={Like} options={{
                tabBarIcon: ({focused}) => (
@@ -67,7 +60,7 @@ const Index = () => {
                     headerShown: false
                 }}
             >
-                <Stack.Screen name = "Home" component={TabBar}/>
+                <Stack.Screen name = "TabBar" component={TabBar}/>
                 <Stack.Screen name = "Detail" component={DetailProduct}/>
                 <Stack.Screen name = "Like" component={Like}/>
                 <Stack.Screen name = "Cart" component={Cart}/>

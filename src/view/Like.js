@@ -1,8 +1,10 @@
 import {View, Text} from 'react-native'
+import HeaderComponents from '../components/HeaderComponents'
 
 const Like = ({navigation}) => {
     return(
-        <View>
+        <View style={{flex: 1}}>
+            <HeaderComponents navigation={navigation}/>
             <Text>Like</Text>
         </View>
     )

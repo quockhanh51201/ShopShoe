@@ -29,70 +29,80 @@ const [products, setProduct] = useState([
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoNice,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 80',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoPuma,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 70',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoPuma,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 911',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoJordan,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 9220',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoNice,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 930',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoPuma,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 990',
         price: 234.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoAdidas,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 290',
         price: 22231.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoAdidas,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 902',
         price: 123.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoJordan,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
     {
         name: 'Nike Air Max 590',
         price: 222.2,
         detail: 'A pillar of sneaker culture, the Nike Air Max 90 remains one of the most significant designs since the brand’s founding. And while its OG colorways are some of the most significant.',
         logo: IMAGES.logoAdidas,
-        image: IMAGES.product
+        image: IMAGES.product,
+        size: [{label: 'Size 35', value: 35},{label: 'Size 37', value: 37},{label: 'Size 39', value: 39},{label: 'Size 40', value: 40}]
     },
 ])
 
@@ -111,7 +121,7 @@ const [products, setProduct] = useState([
                 <Image source={IMAGES.iconNatification} style={{height: '50%',resizeMode:'contain'}}></Image>
             </View>
 
-            <View  style={{flex: 0.1, flexDirection:'row',backgroundColor: '#EEEEEE', borderRadius: 15, alignItems: 'center'}}>
+            <View  style={{flex: 0.05, flexDirection:'row',backgroundColor: '#EEEEEE', borderRadius: 15, alignItems: 'center'}}>
                 <Image source={IMAGES.iconSearch} style={{height: '50%', resizeMode:'contain', left: 22}}></Image>
                 <TextInput 
                     placeholder="Search ?"

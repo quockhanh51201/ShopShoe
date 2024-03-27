@@ -1,8 +1,9 @@
 import {View, Text} from 'react-native'
-
+import HeaderComponents from '../components/HeaderComponents'
 const Profile = ({navigation}) => {
     return(
-        <View>
+        <View style={{flex: 1}}>
+            <HeaderComponents navigation={navigation}/>
             <Text>Profile</Text>
         </View>
     )
