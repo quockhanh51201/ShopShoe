@@ -60,8 +60,6 @@ const DetailProduct = ({route, navigation}) => {
                         
                     }}>
                         {item.detail}
-                        {item.detail}
-                        {item.detail}
 
 
                     </Text>
